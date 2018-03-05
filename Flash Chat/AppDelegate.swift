@@ -22,8 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let myDatabase = Database.database().reference()
-        myDatabase.setValue("Firebase is up and running!")
+        myDatabase.setValue("CHRISTIAN R SNYGGARE ÄN WILLIAM!")
+        myDatabase.child("users").child("bror").setValue(["username": "bror"])
         
+        myDatabase.child("Kusin").child("bror").setValue(["Username" : "William" ])
+    
+
         return true
     }
 
